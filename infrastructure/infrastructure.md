@@ -37,22 +37,22 @@ In this lab, you will:
 
 
  - Create a Dynamic Group called **_dynamic-group-oke-node-pool_** that matches OKE node pool workers with matching rule:
- ```
- <copy>All {instance.compartment = '<COMPARTMENT_NAME>'}</copy>
- ```
- You have to replace **_COMPARTMENT_NAME_** for the compartment name where your Kubernetes Cluster is going to be created.
+    ```
+    <copy>All {instance.compartment = '<COMPARTMENT_NAME>'}</copy>
+    ```  
+   You have to replace **_COMPARTMENT_NAME_** for the compartment name where your Kubernetes Cluster is going to be created.
  
  - From the left side menu select **_Policies_**, and create a policy to allow access to Log Group with the following rule:
   
-  ```
-  <copy>
-  Allow dynamic-group dynamic-group-oke-node-pool to {LOG_ANALYTICS_LOG_GROUP_UPLOAD_LOGS} in compartment <COMPARTMENT_NAME>  
-  </copy>
-  ```
+    ```
+    <copy>
+    Allow dynamic-group dynamic-group-oke-node-pool to {LOG_ANALYTICS_LOG_GROUP_UPLOAD_LOGS} in compartment <COMPARTMENT_NAME>  
+    </copy>
+    ```
 
 ## Task 2: Create a Log Source in the Logging Analytics
  
- A **_log source_** is the built-in definition of where log files are located and how to collect, mask, parse, extract and enrich the collected log data.
+   A **_log source_** is the built-in definition of where log files are located and how to collect, mask, parse, extract and enrich the collected log data.
 
  - From the top left menu choose **_Observability & Management > Logging Analytics > Administration_**
 
@@ -61,21 +61,21 @@ In this lab, you will:
 
  - Click **_Create Source_** and fill the form with the following information:
    
-  ```
-     Name: <copy>hello-api-source</copy>
-  ```
-   ```
-     Description: <copy>Hello API App Source</copy>
-  ```
-   ```
-     Source Type: <copy>File</copy>
-  ```
-   ```
-    Entity Types: <copy>OCI Compute Instance</copy>
-  ```
-   ```
-     Parser: <copy>Automatically parse time only</copy>
-  ```
+    ```
+      Name: <copy>hello-api-source</copy>
+    ```
+    ```
+      Description: <copy>Hello API App Source</copy>
+    ```
+    ```
+      Source Type: <copy>File</copy>
+    ```
+    ```
+      Entity Types: <copy>OCI Compute Instance</copy>
+    ```
+    ```
+      Parser: <copy>Automatically parse time only</copy>
+    ```
  
  - Click **_Create Source_** to confirm.
 
