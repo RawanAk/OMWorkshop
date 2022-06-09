@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "MuShop: Monitoring Solution for Kubernetes",
+  "workshoptitle": "Configure a Monitoring Solution for Kubernetes",
   "help": "livelabs-help-db_us@oracle.com",
   "tutorials": [
     {
@@ -15,6 +15,10 @@
     {
       "title": "Lab 1: Infrastructure Configuration",
       "filename": "../../infrastructure/infrastructure.md"
+    },
+    {
+      "title": "Lab 2: Logging Analytics",
+      "filename": "../../logana/logana.md"
     },
 
     {

@@ -56,6 +56,7 @@ In this lab, you will:
 
  - From the top left menu choose **_Observability & Management > Logging Analytics > Administration_**
 
+  ![](images/menu.png)
 
  - On the side menu, click **_Sources_**.
 
@@ -244,14 +245,16 @@ In this lab, you will:
       docker run -i grafana/k6 run -e LB_PUBLIC_IP=$LB_PUBLIC_IP - <../load/test.js
     </copy>
     ```
+    ![](images/grafana.png)
 
-  Finally, generate an error with this curl command on an endpoint that doesn't exist.
+  Finally, generate an error with this curl command on an endpoint that doesn't exist, you can run it for several times to create several logs.
 
     ```
     <copy>
     curl -s http://$LB_PUBLIC_IP/nofound
     </copy>
     ```
+    ![](images/curl.png)
   Well done, you can now proceed to the next lab!
 
 ## Acknowledgements
