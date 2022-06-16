@@ -20,11 +20,22 @@ In this lab, you will:
 
 ## Task 1: Review the collected logs in the Log Explorer 
 
-  - Go to **_Menu > Observability & Management > Logging Analytics > Log Explorer**
+  - Let's start discover some of the Logging Analytics capabilities, go to **_Menu > Observability & Management > Logging Analytics > Log Explorer**
 
   ![](images/menu.png)
 
-  - On the filter menu on the left, click on **_Log source_** and select **_hello-api-source_**.
+  - You will see that logs has already started to show on the graph, let's try diffrent visualiztions to understand the situation of our enviroment, 
+    
+    > Make sure you have chose the right comaprtamnet 
+   ![](./images/logexp.png)
+
+   - Choose the **Cluster** Visualization, which apply the machine learning capabilities to identify the log records into(clusters, potential issues, outliers,trends)
+
+  ![](images/cluster.png)
+
+## Task 2: Analyse The Application Logs
+
+  - To have a deeper view of our application you can filter **Log Source** and choose the one we created in the previous lab **hello-api-source**, where we can find info about the running application
   
   ![](./images/log-explorer-source-selection.png)
 
@@ -32,19 +43,12 @@ In this lab, you will:
   
   ![](images/logsource.png)
 
-  - Select **Line** as visualization, and to see the workload over a longer period of time you can change the duration selected from the top right side.
+  - Select **Line** as visualization, and to visualize the workload over a longer period of time you can change the duration selected from the top right side.
 
   ![](images/Line.png)
   ![](images/log-explorer-viz.png)
   
 
-  - You can save the current Log Source visualisation in a saparated dashboard by clicking **Action** > **Save as**
-  ![](images/saveas.png)
-
-  - Select the right compartment, choose a name for the **Search Name** and click **Add to dashboard** and choose **new dashboard**, select the same compartment as the Search Name and enter a name for the dashborad in the **Dashboard Name** 
-  ![](images/dashboardname.png)
-
-## Task 2: Search for the error logs 
  
   - Select **Records and Histograms** as visualization.
   ![](images/records.png)
@@ -59,11 +63,96 @@ In this lab, you will:
   - You will see the log errors 404 you generated with the /notfound path.
   ![](images/error.png)
 
-  - To track the error occuration we will add it to the dashboard created earlier in task 1
-  ![](images/errorsave.png)
 
-  - Select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created in task 1.
-  ![](images/save404.png)
+## Task 3: Create Your Own Dashboard
+
+ - To keep an eye on the enviroment we will save some searches that show a summary view of the OKE logs and matrices to a new dashboard that will constantly update the views regarding those specific searches you choose, for this workshop I have chosen to save the following searches:
+### Number of Nodes:
+  - At the query box paste the following:
+  ```
+  <copy>'Log Source' = 'Kubernetes Node Object Logs' | stats latest('Ready Status') as 'Ready Status' by Node
+  </copy>
+  ```
+  And choose Visualization **Tile**
+  ![](images/nofnode.png)
+  
+ - to create a new dashboard go to the top right side and click  **Action** > **Save as**
+  ![](images/savenonode.png)
+
+  - Select the right compartment, choose a name for the **Search Name** and click **Add to dashboard** and choose **new dashboard**, select the same compartment as the Search Name and enter a name for the dashborad in the **Dashboard Name** 
+  ![](images/dashboardname.png)
+
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![]
+ 
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![] 
+
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![]
+
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![]
+
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![]
+
+### Container Status
+  - At the query box paste the following:
+
+```
+<copy>
+</copy>
+```
+And choose Visualization
+![]
+  - Click the **Actions** drill down and select the same compartment and change the **Search Name**, select **Add to dashboard** > **Existing Dashboard** and choose the dashboard you created earlier.
+![]
   -  To view the created dashboard, from the top left side go to **Dashboards**, and select the created dashboard **Hello_API**
   ![](images/dashboard.png)
   ![](images/dashboards.png)

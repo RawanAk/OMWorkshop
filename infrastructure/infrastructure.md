@@ -21,7 +21,7 @@ In this lab, you will:
 
 ## Task 1: Enable access to Log Group with Instance Principal
 
-  - First you need to enable Logging analytics sevice, first go to the menu and select **Observability and Management** and select **Logging Analytics**
+  - First you need to enable Logging analytics service, go to the menu and select **Observability and Management** and select **Logging Analytics**
 
   ![](./images/img1.png)
 
@@ -35,21 +35,24 @@ In this lab, you will:
 
  - Now go back to the menu on the left top side and choose **_Identity & Security_**, then **_Dynamic Groups_**
 
+  ![](images/menu-1.png)
 
  - Create a Dynamic Group called **_dynamic-group-oke-node-pool_** that matches OKE node pool workers with matching rule:
     ```
     <copy>All {instance.compartment = '<COMPARTMENT_NAME>'}</copy>
     ```  
-   You have to replace **_COMPARTMENT_NAME_** for the compartment name where your Kubernetes Cluster is going to be created.
+   You have to replace **`COMPARTMENT_NAME`** for the compartment name where your Kubernetes Cluster is going to be created.
  
  - From the left side menu select **_Policies_**, and create a policy to allow access to Log Group with the following rule:
+  
+  ![](images/policymenu.png)
   
     ```
     <copy>
     Allow dynamic-group dynamic-group-oke-node-pool to {LOG_ANALYTICS_LOG_GROUP_UPLOAD_LOGS} in compartment <COMPARTMENT_NAME>  
     </copy>
     ```
-
+  ![](images/policycreate.png)
 ## Task 2: Create a Log Source in the Logging Analytics
  
    A **_log source_** is the built-in definition of where log files are located and how to collect, mask, parse, extract and enrich the collected log data.
@@ -197,7 +200,7 @@ In this lab, you will:
     ```
 
 
-## Task 4: Manual Application Testing
+## Task 4: Application Testing
 
   - With the **_KUBECONFIG_** exported you can use **_kubectl_** to get some information
 
@@ -207,7 +210,7 @@ In this lab, you will:
       kubectl get nodes
     </copy>
     ```
-
+  ![](images/getnodesCS.png)
     Kubernetes services:
 
     ```
@@ -215,30 +218,30 @@ In this lab, you will:
       kubectl get services
     </copy>
     ```  
-  
+  ![](images/getserviceCS.png)
     You can also list the helm app installed with:
     ```
     <copy>
       helm list
     </copy>
     ```
-
+  ![](images/helmlistCS.png)
   Make sure the application hello-api is successfully deployed.
 
-  - Get the public IP of the load balancer into the variable LB_PUBLIC_IP:
+  - Get the public IP of the load balancer into the variable **`LB_PUBLIC_IP`**:
     ```
     <copy>
       export LB_PUBLIC_IP=$(kubectl get services -o jsonpath='{.items[?(@.spec.type=="LoadBalancer")].status.loadBalancer.ingress[0].ip}')
     </copy>
     ```
-
+  ![](./images/exportCS.png)
   - Print the IP, it should return a valid public IP address.
     ```
     <copy>
       echo $LB_PUBLIC_IP
     </copy>
     ```
-
+  ![](images/echoCS.png)
   - You are going to generate some workload and therefore logs to be explored with Logging Analytics. We are using a tool called k6.oi run in a container locally.
     ```
     <copy>

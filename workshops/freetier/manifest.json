@@ -20,7 +20,10 @@
       "title": "Lab 2: Logging Analytics",
       "filename": "../../logana/logana.md"
     },
-
+    {
+      "title": "Lab 3: DB Management",
+      "filename": "../../dbmngt/dbmngt.md"
+    },
     {
       "title": "Need Help?",
       "description": "Solutions to Common Problems and Directions for Receiving Live Help",
