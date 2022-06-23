@@ -221,7 +221,7 @@ In this lab, you will:
 
   Well done, you can now proceed to the next lab!
 
-## Acknowledgements
-  - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Vittorio Cioe - MySQL Solution Engineer
-  - **Contributors** - Priscila Iruela - Technology Product Strategy Director, Victor Martin - Technology Product Strategy Manager 
-  - **Last Updated By/Date** - Anoosha Pilli, September 2021
+## **Acknowledgements**
+  - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
+  - **Contributors** -
+  - **Last Updated By/Date** -

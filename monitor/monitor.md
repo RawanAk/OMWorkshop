@@ -24,4 +24,10 @@ In this lab, you will:
 - enter an email to recieve a notification on 
   ![](images/createalarm1.png)
 
-- finally, click create alarm
+- Finally, click create alarm
+
+
+## **Acknowledgements**
+  - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
+  - **Contributors** -
+  - **Last Updated By/Date** -

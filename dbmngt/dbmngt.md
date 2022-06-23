@@ -34,25 +34,9 @@ In this lab, you will:
   ![](images/menu2.png)
   ![](images/opsins.png)
  
-## Task 3: Simulate an outage
+## **Acknowledgements**
+  - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
+  - **Contributors** -
+  - **Last Updated By/Date** -
 
-- Back on the cloud shell, connect to the OKE CLuster 
-
-
-- Deploy the load simulation pods
-```
-<copy>
-kubectl create -f https://raw.githubusercontent.com/oracle-quickstart/oci-cloudnative/master/src/load/load-dep.yaml
-</copy>
-```
-### Logging Analytics
-- go to the created dashboard on Logging Analytics and observe the changes happening on the OKE cluster
-
-
-
-### Monitoring
-- if
-
-
- 
 

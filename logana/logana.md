@@ -234,11 +234,7 @@ In this lab, you will:
   - Here you can see the saved searches 
   ![](images/helloapi.png)
 
-  - To design your costumized dashboard as you prefer by clicking on the **Actions** > **Edit**
-  
-  ![](images/edit.png)
-
-  -  You can simply drag and drop the widgets to change their locations and resize them as your preferance 
+  - To design your costumized dashboard as you prefer by clicking on the **Actions** > **Edit**, you can simply drag and drop the widgets to change their locations and resize them as your preferance 
   ![](images/dragdrop.png)
   
 
@@ -297,7 +293,8 @@ In this lab, you will:
     ![](images/loggingsearch.png)
   Well done, you can now proceed to the next lab!
 
-## Acknowledgements
+## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
   - **Contributors** -
-  - **Last Updated By/Date** - Anoosha Pilli, September 2021
+  - **Last Updated By/Date** -
+
