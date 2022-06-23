@@ -67,7 +67,8 @@ In this lab, you will:
 ## Task 3: Create Your Own Dashboard
 
  - To keep an eye on the enviroment we will save some searches that show a summary view of the OKE logs and matrices to a new dashboard that will constantly update the views regarding those specific searches you choose, for this workshop I have chosen to save the following searches:
-### Number of Nodes:
+
+  ### Number of Nodes:
   - At the query box paste the following:
   ```
   <copy>'Log Source' = 'Kubernetes Node Object Logs' | stats latest('Ready Status') as 'Ready Status' by Node
@@ -82,7 +83,18 @@ In this lab, you will:
   - Select the right compartment, choose a name for the **Search Name** and click **Add to dashboard** and choose **new dashboard**, select the same compartment as the Search Name and enter a name for the dashborad in the **Dashboard Name** 
   ![](images/dashboardname.png)
 
-### Container Status
+just like that run the following queries and change their visualiztions to best show the output and add them to the existing dashboard:
+
+  ### For deployment count: 
+  ```
+<copy>
+	'Log Source' = 'Kubernetes Deployment Object Logs' and 'Available Status' = True | stats distinctcount(Deployment)
+
+</copy>
+```
+Visalization: Tile
+
+  ### Container Status
   - At the query box paste the following:
 
 ```

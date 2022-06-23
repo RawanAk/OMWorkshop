@@ -33,11 +33,23 @@ In this lab, you will:
 
   ![](./images/img3%20copy.PNG)
 
- - Now go back to the menu on the left top side and choose **_Identity & Security_**, then **_Dynamic Groups_**
+  - To set some polcies we will have to first create a Dynamic Group, we will need a compartment id, which you can find at **Identity & Security > Compartment** copy Compartment ocid and  save it on a separate text file for later,
+  ![](images/compartment.png)
+
+ - Now go back to the menu on the left top side and choose **_Identity & Security_**, then **Domains > Dynamic Groups**
 
   ![](images/menu-1.png)
+  ![](images/domains.png)
 
+  ![](images/domainsinterface.png)
  - Create a Dynamic Group called **_dynamic-group-oke-node-pool_** that matches OKE node pool workers with matching rule:
+   
+
+    ![](images/dynamicgroup.png)
+
+    ![](images/createdynamicgroup.png)
+
+    ![](images/dynamicrule.png)
     ```
     <copy>All {instance.compartment = '<COMPARTMENT_NAME>'}</copy>
     ```  
@@ -94,13 +106,14 @@ In this lab, you will:
     git clone https://github.com/vmleon/oci-hello-loganalytics.git
     </copy>
     ```
-
+   ![](images/gitclone.png)
   - Change directory to oci-hello-loganalytics/provisioning:
     ```
     <copy>
     cd oci-hello-loganalytics/provisioning
     </copy>
     ```
+   
 
 
   - Terraform initiate:
@@ -110,7 +123,7 @@ In this lab, you will:
     terraform init
     </copy>
     ```
-
+   ![](images/tfinit.png)
   - Before we apply the infrastructure with terraform, we need to set some variables.
 
   - Let's start with copy the template variable file:
@@ -120,7 +133,7 @@ In this lab, you will:
     cp terraform.tfvars_template terraform.tfvars
     </copy>
     ```
-
+    ![](images/cptf.png)
   - Get the values and copy them aside from running these commands
 
     Region:
@@ -135,10 +148,10 @@ In this lab, you will:
     echo $OCI_TENANCY
     </copy>
     ```
-
+    ![](images/savetenancy.png)
   If using the root compartment (trials) for compartment_ocid set the OCI_TENANCY value as well, otherwise, use the specific OCID compartment:
 
-  Do you want to search for a specific compartment by name? Use the following command and replace <COMPARTMENT_NAME> by the name of the compartment.
+  - We need again the Compartment ocid that we saved earlier in task1, if you haven't save it you can find in from cloud shell as follows, replace <COMPARTMENT_NAME> by the name of the compartment.
 
     ```
     <copy>
@@ -158,7 +171,7 @@ In this lab, you will:
       vim terraform.tfvars
     </copy> 
     ```
-
+    ![](images/tfplain.png)
  - An example of the final result would be:
   
     ```
@@ -169,6 +182,7 @@ In this lab, you will:
       profile = ""
     </copy>
     ```
+    ![](images/tfinfo.png)
  - Run the Terraform apply:
     ```
     <copy>
@@ -199,7 +213,7 @@ In this lab, you will:
     </copy>
     ```
 
-
+    ![](images/kubeconf.png)
 ## Task 4: Application Testing
 
   - With the **_KUBECONFIG_** exported you can use **_kubectl_** to get some information
