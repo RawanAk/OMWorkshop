@@ -12,7 +12,7 @@ In this lab, you will:
 - create alarm
 
 
-## Task 2: Create An Alarm 
+## Task 1: Create An Alarm 
 
 - Fom the main menu, click **Alarm Definitions**, then click **Create Alarm**
   ![](images/menu.png)
@@ -23,5 +23,5 @@ In this lab, you will:
 
 - enter an email to recieve a notification on 
   ![](images/createalarm1.png)
-  
+
 - finally, click create alarm
