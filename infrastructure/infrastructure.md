@@ -19,8 +19,7 @@ In this lab, you will:
 - Log-in to your OCI tenancy.
   
 
-## Task 1: Enable access to Log Group with Instance Principal
-
+## Task 1: Enable Logging Analytics Service
   - First you need to enable Logging analytics service, go to the menu and select **Observability and Management** and select **Logging Analytics**
 
   ![](./images/img1.png)
@@ -33,7 +32,9 @@ In this lab, you will:
 
   ![](./images/img3%20copy.PNG)
 
-  - To set some polcies we will have to first create a Dynamic Group, we will need a compartment id, which you can find at **Identity & Security > Compartment** copy Compartment ocid and  save it on a separate text file for later,
+## Task 2: Create a Dynamic Group and Set the Required Policies
+
+  - To set some policies we will have to first create a Dynamic Group, we will need a compartment id, which you can find at **Identity & Security > Compartment** copy Compartment ocid and  save it on a separate text file for later,
   ![](images/compartment.png)
 
  - Now go back to the menu on the left top side and choose **_Identity & Security_**, then **Domains > Dynamic Groups**
@@ -42,10 +43,8 @@ In this lab, you will:
   ![](images/domains.png)
 
   ![](images/domainsinterface.png)
+   ![](images/dynamicgroup.png)
  - Create a Dynamic Group called **_dynamic-group-oke-node-pool_** that matches OKE node pool workers with matching rule:
-   
-
-    ![](images/dynamicgroup.png)
 
     ![](images/createdynamicgroup.png)
 
@@ -55,13 +54,18 @@ In this lab, you will:
     ```  
    You have to replace **`COMPARTMENT_NAME`** for the compartment name where your Kubernetes Cluster is going to be created.
  
- - From the left side menu select **_Policies_**, and create a policy to allow access to Log Group with the following rule:
+ - Back to the **Identity** from the left side menu select **_Policies_**, and create a policy to allow access to Log Group with the following rule:
   
   ![](images/policymenu.png)
   
     ```
     <copy>
     Allow dynamic-group dynamic-group-oke-node-pool to {LOG_ANALYTICS_LOG_GROUP_UPLOAD_LOGS} in compartment <COMPARTMENT_NAME>  
+    </copy>
+    ```
+    ```
+    <copy>
+    Allow dynamic-group <DynamicGroupName> to use log-content in tenancy
     </copy>
     ```
   ![](images/policycreate.png)
@@ -214,64 +218,7 @@ In this lab, you will:
     ```
 
     ![](images/kubeconf.png)
-## Task 4: Application Testing
 
-  - With the **_KUBECONFIG_** exported you can use **_kubectl_** to get some information
-
-   Kubernetes Nodes:
-    ```
-    <copy>
-      kubectl get nodes
-    </copy>
-    ```
-  ![](images/getnodesCS.png)
-    Kubernetes services:
-
-    ```
-    <copy>
-      kubectl get services
-    </copy>
-    ```  
-  ![](images/getserviceCS.png)
-    You can also list the helm app installed with:
-    ```
-    <copy>
-      helm list
-    </copy>
-    ```
-  ![](images/helmlistCS.png)
-  Make sure the application hello-api is successfully deployed.
-
-  - Get the public IP of the load balancer into the variable **`LB_PUBLIC_IP`**:
-    ```
-    <copy>
-      export LB_PUBLIC_IP=$(kubectl get services -o jsonpath='{.items[?(@.spec.type=="LoadBalancer")].status.loadBalancer.ingress[0].ip}')
-    </copy>
-    ```
-  ![](./images/exportCS.png)
-  - Print the IP, it should return a valid public IP address.
-    ```
-    <copy>
-      echo $LB_PUBLIC_IP
-    </copy>
-    ```
-  ![](images/echoCS.png)
-  - You are going to generate some workload and therefore logs to be explored with Logging Analytics. We are using a tool called k6.oi run in a container locally.
-    ```
-    <copy>
-      docker run -i grafana/k6 run -e LB_PUBLIC_IP=$LB_PUBLIC_IP - <../load/test.js
-    </copy>
-    ```
-    ![](images/grafana.png)
-
-  Finally, generate an error with this curl command on an endpoint that doesn't exist, you can run it for several times to create several logs.
-
-    ```
-    <copy>
-    curl -s http://$LB_PUBLIC_IP/nofound
-    </copy>
-    ```
-    ![](images/curl.png)
   Well done, you can now proceed to the next lab!
 
 ## Acknowledgements
