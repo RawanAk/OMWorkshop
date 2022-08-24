@@ -11,7 +11,7 @@ Estimated Time: X minutes
 ### Objectives
 
 In this lab, you will:
-- create alarm
+- Create an alarm
 
 
 ## Task 1: Create An Alarm 
@@ -28,7 +28,7 @@ In this lab, you will:
 
 - Finally, click create alarm
 
-You can now proceed to **[next lab.](monitor.md)**
+You can now proceed to **[next lab.](simuluation.md)**
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
   - **Contributors** -
