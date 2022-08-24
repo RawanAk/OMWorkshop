@@ -38,11 +38,11 @@ In this lab, you will:
  
  With Operations Insights you can:
 
-    Analyze resource usage of databases/hosts across the enterprise
-    Forecast future demand for resources based on historical trends
-    Compare SQL Performance across databases and identify common patterns
-    Identify SQL performance trends across enterprise-wide databases
-    Analyze AWR statistics for database performance, diagnostics, and tuning across a fleet of databases
+  - Analyze resource usage of databases/hosts across the enterprise
+  - Forecast future demand for resources based on historical trends
+  - Compare SQL Performance across databases and identify common patterns
+  - Identify SQL performance trends across enterprise-wide databases
+  - Analyze AWR statistics for database performance, diagnostics, and tuning across a fleet of databases
 
 
  You can now move to **[next lab!](../monitor/monitor.md)**
