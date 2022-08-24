@@ -25,16 +25,25 @@ In this lab, you will:
 
 
 ## Task 2: View the Fleet Summary and Capacity Palnning 
+
 - From the Menu go back to the Observability & Management > Database Management
 ![](images/menu2.png)
 
-- You can see on the Fleet summary diffrent information related to the the Database instance
+- You can see on the Fleet summary different information related to the the Database instance
 ![](images/dbmngmt.png)
  
 - You can see further information related tou planning capacity from the realted features > Operations Insights
   ![](images/menu2.png)
   ![](images/opsins.png)
  
+ With Operations Insights you can:
+
+    Analyze resource usage of databases/hosts across the enterprise
+    Forecast future demand for resources based on historical trends
+    Compare SQL Performance across databases and identify common patterns
+    Identify SQL performance trends across enterprise-wide databases
+    Analyze AWR statistics for database performance, diagnostics, and tuning across a fleet of databases
+
 
  You can now move to **[next lab!](../monitor/monitor.md)**
 ## **Acknowledgements**
