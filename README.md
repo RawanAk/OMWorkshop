@@ -25,7 +25,7 @@ In this workshop, you will learn how to:
 
 -  This workshop requires an Oracle Cloud account with available credits, you may check out this **[video](https://www.youtube.com/watch?v=4U-0SumNz6w)** to help you signing up. You also can use a paid cloud account or a trial cloud account as well.
   
-[Trial SignUp](youtube:4U-0SumNz6w)
+
 
 
 ## **[Lab 1: Infrastructure Configuration](infrastructure/infrastructure.md)**
