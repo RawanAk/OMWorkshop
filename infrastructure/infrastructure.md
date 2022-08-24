@@ -219,7 +219,7 @@ In this lab, you will:
 
     ![](images/kubeconf.png)
 
-  Well done, you can now proceed to the next lab!
+  Well done, you can now proceed to the **[next lab!](../logana/logana.md)**
 
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 

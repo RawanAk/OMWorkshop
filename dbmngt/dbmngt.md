@@ -2,7 +2,8 @@
 
 ## Introduction
 
-In this lab we will unleash the capabilites of  and review aggregated data in a dashboard and explore the available logs in the Log Explorer. 
+ Database Management Cloud Service, DBAs get a unified console for on-premises and cloud databases with lifecycle database management capabilities for monitoring, performance management, tuning, and administration. Use advanced database fleet diagnostics and tuning to troubleshoot issues and optimize performance. 
+ While Operations Insights is an OCI native service that provides holistic insight into database and host resource utilization and capacity. It also provides direct access to the Oracle Cloud Infrastructure Database Management service, which lets you take advantage of its real-time database performance and management capability with a single click.
 
 Estimated Time: X minutes
 
@@ -34,6 +35,8 @@ In this lab, you will:
   ![](images/menu2.png)
   ![](images/opsins.png)
  
+
+ You can now move to **[next lab!](../monitor/monitor.md)**
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
   - **Contributors** -

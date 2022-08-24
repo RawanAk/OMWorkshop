@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this lab we will unleash the capabilites of  and review aggregated data in a dashboard and explore the available logs in the Log Explorer. 
+The Oracle Cloud Infrastructure Monitoring service uses metrics  to monitor resources and alarms  to notify you when these metrics meet alarm-specified triggers. 
+
+![](images/monitoringOverview.png)
 
 Estimated Time: X minutes
 
@@ -26,7 +28,7 @@ In this lab, you will:
 
 - Finally, click create alarm
 
-
+You can now proceed to **[next lab.](monitor.md)**
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
   - **Contributors** -

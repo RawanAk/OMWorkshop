@@ -3,6 +3,7 @@
 ## Introduction
 
 In this lab we will unleash the capabilites of Logging Analytics and review aggregated data in a dashboard and explore the available logs in the Log Explorer. 
+Oracle Cloud Logging Analytics is a cloud solution in Oracle Cloud Infrastructure that lets you index, enrich, aggregate, explore, search, analyze, correlate, visualize and monitor all log data from your applications and system infrastructure.
 
 Estimated Time: X minutes
 
@@ -291,7 +292,7 @@ In this lab, you will:
     ![](images/customlog3.png)
   - Navigate to **Logging > Search**, you will the logs are ingested and you can **Save search** and explore the logs further
     ![](images/loggingsearch.png)
-  Well done, you can now proceed to the next lab!
+  Well done, you can now proceed to the **[next lab!](../dbmngt/dbmngt.md)**
 
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
