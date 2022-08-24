@@ -55,7 +55,4 @@ This step showcases the a load file deployed to the application which will creat
 
 Ready? let's start learning!
 
-## Acknowledgements
-- **Author** -  
-- **Contributors** 
-- **Last Updated By/Date** 
+
