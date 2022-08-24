@@ -1,6 +1,6 @@
 # Introduction
 
-![](./Intro/images/Intro.png)
+![](./intro/images/Intro.png)
 
 ## About this Workshop
 
@@ -28,20 +28,20 @@ In this workshop, you will learn how to:
 [Trial SignUp](youtube:4U-0SumNz6w)
 
 
-## **[Lab 1: Enable Logging Analytics Service](infrastructure/infrastructure.md)**
+## **[Lab 1: Infrastructure Configuration](infrastructure/infrastructure.md)**
 
 
 
-## **[Lab 2: Enable Logging Analytics Service](logana/logana.md)**
+## **[Lab 2: Logging Analytics & Logging](logana/logana.md)**
 
 
-## **[Lab 3: Enable Logging Analytics Service](dbmngt/dbmngt.md)**
+## **[Lab 3: Database Management & Operation Insights](dbmngt/dbmngt.md)**
 
 
-## **[Lab 4: Enable Logging Analytics Service](monitor/monitor.md)**
+## **[Lab 4: Monitoring](monitor/monitor.md)**
 
 
-## **[Lab 5: Enable Logging Analytics Service](simulation/simulation.md)**
+## **[Lab 5: Outage Simulation](simulation/simulation.md)**
 
 Ready? let's start learning!
 
