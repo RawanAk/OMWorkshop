@@ -28,7 +28,7 @@ In this lab, you will:
 
 - Finally, click create alarm
 
-You can now proceed to **[next lab.](simuluation.md)**
+You can now proceed to **[next lab.](simulation.md)**
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
   - **Contributors** -
