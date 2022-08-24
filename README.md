@@ -34,6 +34,7 @@ In this workshop, you will learn how to:
 
  The repository contains the application code as well as the Terraform code, that creates all the required resources and configures the application on the created resources.
 
+ we will also ingest the application logs into logging service which is a highly scalable and fully managed single pane of glass for all the logs in your tenancy. 
 ## **[Lab 2: Logging Analytics & Logging](logana/logana.md)**
 
  In this lab we will unleash the capabilites of Logging Analytics and review aggregated data in a dashboard and explore the available logs in the Log Explorer. 

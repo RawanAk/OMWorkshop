@@ -4,6 +4,7 @@
 
 In this lab we will unleash the capabilites of Logging Analytics and review aggregated data in a dashboard and explore the available logs in the Log Explorer. 
 Oracle Cloud Logging Analytics is a cloud solution in Oracle Cloud Infrastructure that lets you index, enrich, aggregate, explore, search, analyze, correlate, visualize and monitor all log data from your applications and system infrastructure.
+We will also ingest the application logs into logging service which is a highly scalable and fully managed single pane of glass for all the logs in your tenancy. 
 
 Estimated Time: X minutes
 
@@ -271,7 +272,7 @@ In this lab, you will:
 
     ```
     ![](images/customlog2.png)
-  - To create Agent Configuration enter the following inormation:
+  - To create Agent Configuration enter the following information:
     ```
       Configuration Name: <ConfigurationName>
       Compartment: <SelectCompartment>
