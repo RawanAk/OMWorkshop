@@ -10,7 +10,7 @@ Estimated Time: X minutes
 ### Objectives
 
 In this lab, you will:
-- explore the Fleet Summary.
+- Explore Database Management andn Operations Insights functionality
 
 
 ## Task 1: Enable DataBase Management & Operation Insights
