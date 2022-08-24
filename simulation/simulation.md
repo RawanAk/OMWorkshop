@@ -9,7 +9,7 @@ Estimated Time: X minutes
 ### Objectives
 
 In this lab, you will:
-- simulate workload
+- Simulate An Error
 
 
 ## Task 1: Create Load
@@ -34,7 +34,7 @@ In this lab, you will:
 
     ![](images/editdashboard.png)
 
-## Task 3: Check firing Alarms
+## Task 3: Check Firing Alarms
 
 - From the Menu select **O&M > Monitoring > Alarm Status**
 ![](images/alarm.png)
