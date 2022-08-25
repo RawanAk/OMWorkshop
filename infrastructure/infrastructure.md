@@ -144,7 +144,7 @@ In this lab, you will:
   /oci-hello-loganalytics/provisioning/terraform.tfvars
   </copy>
   ```
-  ![](images/codeeditor2.png)
+   ![](images/codeeditor2.png)
 
  - From the cloud shel we need to get some  values and copy them to the code editor
 
@@ -191,17 +191,7 @@ In this lab, you will:
 
  You will see something like this:
 
-    ```
-    <copy>
-      Apply complete! Resources: 19 added, 0 changed, 0 destroyed.
-
-      Outputs:
-
-      deployed_oke_kubernetes_version = "v1.22.5"
-      generated_private_key_pem = <sensitive>
-      kubeconfig_for_kubectl = "export KUBECONFIG=$(pwd)/generated/kubeconfig"
-    </copy>
-    ```
+  ![](images/terraformcomplete.png)
 
 - Run that last command:
 
