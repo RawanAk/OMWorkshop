@@ -42,8 +42,19 @@ In this lab, you will:
 ![](images/alarm2.png)
 - Check the email inbox you used creating the alarm to see the notification
 ![](images/emailnotif.png)
+
 - Finally, remove the load created from the Cloud Shell
 ![](images/deleteload.png)
+
+## Task 4: Destroy the resources
+
+- In the cloud shell go to provisioning directory and run the following:
+```
+cd oci-hello-loganalytics/provisioning/
+terraform destroy
+```
+- It will ask to enter a value, enter **yes**
+![](images/destroy.png)
 
 ## **Acknowledgements**
   - **Author** - Rawan Aboukoura - Technology Product Strategy Manager, Victor Martin - Technology Product Strategy Manager 
