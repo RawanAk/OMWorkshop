@@ -80,7 +80,7 @@ In this lab, you will:
     </copy>
     ```
 
-    ![](images/curl.png)
+    ![](./images/curlimage.png)
 ## Task 2: Review the Collected Logs in the Log Explorer 
 
   - Let's start discover some of the Logging Analytics capabilities, go to **Menu > Observability & Management > Logging Analytics > Log Explorer**
