@@ -24,12 +24,14 @@ In this lab, you will:
   - With the **_KUBECONFIG_** exported you can use **_kubectl_** to get some information
 
    Kubernetes Nodes:
+
     ```
     <copy>
       kubectl get nodes
     </copy>
     ```
   ![](images/getnodesCS.png)
+    
     Kubernetes services:
 
     ```
@@ -54,14 +56,14 @@ In this lab, you will:
     export LB_PUBLIC_IP=$(kubectl get services -o jsonpath='{.items[?(@.spec.type=="LoadBalancer")].status.loadBalancer.ingress[0].ip}')
     </copy>
     ```
-    ![](./images/exportCS.png)
+   ![](./images/exportCS.png)
   - Print the IP, it should return a valid public IP address.
     ```
     <copy>
       echo $LB_PUBLIC_IP
     </copy>
     ```
-  ![](images/echoCS.png)
+    ![](images/echoCS.png)
   - You are going to generate some workload and therefore logs to be explored with Logging Analytics. We are using a tool called k6.oi run in a container locally.
     ```
     <copy>
@@ -77,6 +79,7 @@ In this lab, you will:
     curl -s http://$LB_PUBLIC_IP/nofound
     </copy>
     ```
+
     ![](images/curl.png)
 ## Task 2: Review the Collected Logs in the Log Explorer 
 
